@@ -91,6 +91,7 @@ kloop:
 	mov x1, x27
 	bl intadd
 	mov x22, x0
+cval:
 	ldr x19, [x20, x19]
 	ldr x22, [x21, x22]
 	mov x0, x19
