@@ -95,8 +95,6 @@ kloop:
 	mov x1, #4
 	bl intmul
 	mov x22, x0
-cval:
-
 	ldrsw x19, [x20, x19]
 	ldrsw x22, [x21, x22]
 	mov x0, x19
@@ -117,6 +115,8 @@ setres:
 	bl intmul
 	mov x1, x27
 	bl intadd
+	mov x1, #4
+	bl intmul
 	str w25, [x19, x0]
 	mov x0, x27
 	mov x1, #1
