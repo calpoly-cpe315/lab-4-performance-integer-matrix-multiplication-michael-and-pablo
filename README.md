@@ -1,6 +1,8 @@
 # cpe315-matmul
 ## Your name(s) here
 
+This branch is for the Lab Implementation
+
 ### To build:
 ```shell
 make clean; make
