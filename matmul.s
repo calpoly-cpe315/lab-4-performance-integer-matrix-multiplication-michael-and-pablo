@@ -66,15 +66,17 @@ matmul:
 	mov x24, x5
 
 	mov x26, #0 //init loop variables to 0
-	mov x27, #0
-	mov x28, #0
+	
+	
 iloop:
 	cmp x26, x22
 	b.ge end
+	mov x27, #0
 jloop:
 	cmp x27, x24
 	b.ge addi
 	mov x25, #0
+	mov x28, #0
 kloop:
 	cmp x28, x23
 	b.ge setres
