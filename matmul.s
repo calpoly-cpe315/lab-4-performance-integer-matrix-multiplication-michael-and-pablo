@@ -92,14 +92,14 @@ kloop:
 	bl intadd
 	mov x22, x0
 cval:
-	ldr x19, [x20, x19]
-	ldr x22, [x21, x22]
-	mov x0, x19
-	mov x1, x22
+	ldr w19, [x20, x19]
+	ldr w22, [x21, x22]
+	mov w0, w19
+	mov w1, w22
 	bl intmul
-	mov x1, x25
+	mov w1, w25
 	bl intadd
-	mov x25, x0
+	mov w25, w0
 	ldp x19, x22, [sp], 16
 	mov x0, x28
 	mov x1, #1
