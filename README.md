@@ -1,7 +1,7 @@
 # cpe315-matmul
 ## Your name(s) here
 
-This branch is for the Lab Implementation
+This branch is for the ARM Implementation
 
 ### To build:
 ```shell
