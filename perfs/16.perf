@@ -1,0 +1,20 @@
+# started on Sun Feb 27 21:23:52 2022
+
+
+ Performance counter stats for './mm':
+
+             42.23 msec task-clock:u              #    0.952 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                27      page-faults:u             #    0.639 K/sec                  
+        82,800,523      cycles:u                  #    1.961 GHz                    
+       108,672,757      instructions:u            #    1.31  insn per cycle         
+        12,878,397      branches:u                #  304.967 M/sec                  
+           205,760      branch-misses:u           #    1.60% of all branches        
+
+       0.044349406 seconds time elapsed
+
+       0.042976000 seconds user
+       0.000000000 seconds sys
+
+
