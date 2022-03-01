@@ -54,9 +54,13 @@ kloop:
    b.ge setres
    mul x18, x26, x23
    add x18, x18, x
-
+   
+   add x28, x28, #1
+   b kloop
 setres:
-
+    
+   add x27, x27, #1
+   b jloop
 
 addi:
    add x26, x26, #1
