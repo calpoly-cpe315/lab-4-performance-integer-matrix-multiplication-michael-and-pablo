@@ -52,25 +52,30 @@ jloop:
 kloop:
    cmp x28, x23 
    b.ge setres // once k == wA, branch
+   //sum += A[i * wA + k] * B[k * wB + 
    mul x18, x26, x23
    add x18, x18, x28
    mov x0, #4
    mul x18, x18, x0
-
-   ldr x20, [sp, 24]
-   ldr w20, [x20, x19]
+   ldr w20, [x20, x18]
    mul x18, x28, x24
-   add x19, x19, x28
+   add x18, x18, x28
    mov x0, #4
    mul x18, x18, x0
-
-   
-
+   ldr w21, [x21, x18]
+   mul x18, x21, x20
+   add x25, x25, x18
    add x28, x28, #1
    b kloop
+
 setres:
    //C[i * wB + j] = sum;
-    
+   //i * wB + j
+   mul x18, x26, x24 //i * wB
+   add x18, x18, x27 //i * wB + j
+   mov x0, #4
+   mul x18, x18, x0
+   str w25, [x19, x18]
    add x27, x27, #1
    b jloop
 
