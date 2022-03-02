@@ -5,6 +5,8 @@ This branch is for the ARM Implementation
 
 The matmul-mul implementation with mul instructions can be found here
 
+The writeup for this assignment can be found on the main branch
+
 ### To build:
 ```shell
 make clean; make
