@@ -1,7 +1,11 @@
 # cpe315-matmul
-## Your name(s) here
+## Michael Noon & Pablo Gonzalez
+
+Lab status: Complete
 
 This branch is for the Lab Implementation
+
+NOTE: matmul-mul implementation can be found in the ARM-Implementation branch
 
 ### To build:
 ```shell
