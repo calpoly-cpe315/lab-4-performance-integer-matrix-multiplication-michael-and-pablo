@@ -1,7 +1,8 @@
 # cpe315-matmul
-## Your name(s) here
+## Michael Noon & Pablo Gonzalez
 
 This branch is for the ARM Implementation
+The matmul-mul implementation with mul instructions can be found here
 
 ### To build:
 ```shell
