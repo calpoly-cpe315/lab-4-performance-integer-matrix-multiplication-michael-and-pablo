@@ -48,12 +48,12 @@ kloop:
    add x9, x9, x14
    mov x10, #4
    mul x9, x9, x10
-   ldr x11, [x1, x9]
+   ldrsw x11, [x1, x9]
    mul x9, x14, x5
-   add x9, x9, x14
+   add x9, x9, x13
    mov x10, #4
    mul x9, x9, x10
-   ldr x12, [x2, x9]
+   ldrsw x12, [x2, x9]
    mul x9, x12, x11
    add x6, x6, x9
    add x14, x14, #1
