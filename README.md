@@ -1,6 +1,8 @@
 # cpe315-matmul
 ## Michael Noon & Pablo Gonzalez
 
+Lab Status: Complete
+
 This branch is for the ARM Implementation
 
 The matmul-mul implementation with mul instructions can be found here
